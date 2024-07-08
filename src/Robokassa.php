@@ -11,27 +11,27 @@ class Robokassa
     /**
      * @var Client $client
      */
-    private Client $client;
+    private $client;
 
     /**
      * @var string
      */
-    private string $paymentUrl = 'https://auth.robokassa.ru/Merchant/Index.aspx';
+    private $paymentUrl = 'https://auth.robokassa.ru/Merchant/Index.aspx';
 
     /**
      * @var string
      */
-    private string $recurrentUrl = 'https://auth.robokassa.ru/Merchant/Recurring';
+    private $recurrentUrl = 'https://auth.robokassa.ru/Merchant/Recurring';
 
     /**
      * @var string
      */
-    private string $smsUrl = 'https://services.robokassa.ru/SMS/';
+    private $smsUrl = 'https://services.robokassa.ru/SMS/';
 
     /**
      * @var string
      */
-    private string $webServiceUrl = 'https://auth.robokassa.ru/Merchant/WebService/Service.asmx';
+    private $webServiceUrl = 'https://auth.robokassa.ru/Merchant/WebService/Service.asmx';
 
     /**
      * @var bool
@@ -61,12 +61,12 @@ class Robokassa
     /**
      * @var int
      */
-    private int $strLenSms = 128;
+    private $strLenSms = 128;
 
     /**
      * @var array|string[]
      */
-    private array $hashAlgoList = [
+    private $hashAlgoList = [
         'md5',
         'ripemd160',
         'sha1',

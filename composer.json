@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "php": ">=7.4",
+    "php": ">=7.3",
     "guzzlehttp/guzzle": ">=6.3",
     "ext-json": "*",
     "ext-simplexml": "*"
@@ -24,6 +24,8 @@
     "psr-4": {
       "Unetway\\Robokassa\\": "src/"
     }
+  },
+  "require-dev": {
+    "rector/rector": "^1.2"
   }
 }
-
