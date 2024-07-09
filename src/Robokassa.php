@@ -583,6 +583,26 @@ class Robokassa
             array_push($required, $params['Receipt']);
         }
 
+        if (isset($params['ResultUrl2'])) {
+            array_push($required, $params['ResultUrl2']);
+        }
+
+        if (isset($params['SuccessUrl2'])) {
+            array_push($required, $params['SuccessUrl2']);
+        }
+
+        if (isset($params['SuccessUrl2Method'])) {
+            array_push($required, $params['SuccessUrl2Method']);
+        }
+
+        if (isset($params['FailUrl2'])) {
+            array_push($required, $params['FailUrl2']);
+        }
+
+        if (isset($params['FailUrl2Method'])) {
+            array_push($required, $params['FailUrl2Method']);
+        }
+
         array_push($required, $this->getPassword1());
 
         $hash = $this->getHashFields($params, $required);
