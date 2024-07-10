@@ -51,7 +51,7 @@ class Robokassa
     /**
      * @var string
      */
-    private $hashType = 'sha256';
+    private $hashType = 'md5';
 
     /**
      * @var mixed
@@ -165,6 +165,11 @@ class Robokassa
         if (!empty($params['Receipt'])) {
             $params['Receipt'] = urlencode(json_encode($params['Receipt']));
             $signatureParams['Receipt'] = $params['Receipt'];
+        }
+
+        if (!empty($params['ResultUrl2'])) {
+            $params['ResultUrl2'] = urlencode($params['ResultUrl2']);
+            $signatureParams['ResultUrl2'] = $params['ResultUrl2'];
         }
 
         if (!empty($params['IsTest']) && $params['IsTest']) {
